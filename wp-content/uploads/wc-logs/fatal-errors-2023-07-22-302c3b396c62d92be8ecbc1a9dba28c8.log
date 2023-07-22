@@ -1,0 +1,226 @@
+2023-07-22T04:51:10+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 205
+
+2023-07-22T09:09:07+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\class-ss-url-extractor.php on line 142
+
+2023-07-22T09:16:06+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\tasks\class-ss-fetch-urls-task.php on line 156
+
+2023-07-22T09:20:24+00:00 CRITICAL Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\tasks\class-ss-fetch-urls-task.php:271
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\tasks\class-ss-fetch-urls-task.php(271): explode('\n', Array)
+#1 C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\tasks\class-ss-fetch-urls-task.php(61): Simply_Static\Fetch_Urls_Task->find_excludable(Object(Simply_Static\Page))
+#2 C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\class-ss-archive-creation-job.php(142): Simply_Static\Fetch_Urls_Task->perform()
+#3 C:\xampp\htdocs\e-commerce\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(301): Simply_Static\Archive_Creation_Job->task('fetch_urls')
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\woocommerce\includes\libraries\wp-background-process.php(175): WP_Background_Process->handle()
+#5 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP_Background_Process->maybe_handle('')
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp_arch...')
+#9 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\tasks\class-ss-fetch-urls-task.php on line 271
+
+2023-07-22T09:55:16+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\vendor\voku\portable-utf8\src\voku\helper\UTF8.php on line 2398
+
+2023-07-22T10:17:50+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 534
+
+2023-07-22T10:32:30+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 510
+
+2023-07-22T10:36:44+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\class-ss-url-extractor.php on line 142
+
+2023-07-22T10:40:45+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 510
+
+2023-07-22T10:43:51+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 510
+
+2023-07-22T16:29:00+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:32:39+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:40:19+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:44:08+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:48:08+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:52:39+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:55:06+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:56:13+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T16:59:44+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T17:10:14+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T17:12:46+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T17:19:18+00:00 CRITICAL Uncaught Error: Class "ZipArchive" not found in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php:19
+Stack trace:
+#0 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\Controller.php(87): WP2StaticZip\ZipArchiver->generateArchive('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(308): WP2StaticZip\Controller->generateZip('C:/xampp/htdocs...', 'wp2static-addon...')
+#2 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(639): do_action('wp2static_deplo...', 'C:/xampp/htdocs...', 'wp2static-addon...')
+#5 C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static\src\Controller.php(730): WP2Static\Controller::wp2staticHeadless()
+#6 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(306): WP2Static\Controller::wp2staticRun()
+#7 C:\xampp\htdocs\e-commerce\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\e-commerce\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\e-commerce\wp-admin\admin-ajax.php(188): do_action('wp_ajax_wp2stat...')
+#10 {main}
+  thrown in C:\xampp\htdocs\e-commerce\wp-content\plugins\wp2static-addon-zip\src\ZipArchiver.php on line 19
+
+2023-07-22T17:25:27+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 510
+
+2023-07-22T17:27:19+00:00 CRITICAL syntax error, unexpected identifier "max_execution_time" in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 2
+
+2023-07-22T17:31:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\vendor\voku\simple_html_dom\src\voku\helper\AbstractDomParser.php on line 485
+
+2023-07-22T17:35:52+00:00 CRITICAL syntax error, unexpected integer "400", expecting ")" in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\vendor\voku\simple_html_dom\src\voku\helper\AbstractDomParser.php on line 485
+
+2023-07-22T17:43:11+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\src\tasks\class-ss-fetch-urls-task.php on line 156
+
+2023-07-22T17:47:34+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\simply-static\vendor\voku\portable-utf8\src\voku\helper\UTF8.php on line 12851
+
+2023-07-22T17:56:17+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-includes\Requests\src\Transport\Curl.php on line 512
+

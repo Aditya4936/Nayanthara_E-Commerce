@@ -1,0 +1,6 @@
+2023-07-19T08:54:29+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\woocommerce\src\Internal\Admin\ProductReviews\Reviews.php on line 533
+
+2023-07-19T08:54:39+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\elementor\includes\widgets\accordion.php on line 4
+
+2023-07-19T11:12:11+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\e-commerce\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\AbstractBlock.php on line 65
+
